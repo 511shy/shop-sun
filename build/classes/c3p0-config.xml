@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"   ?>
+<!DOCTYPE c3p0-config>
+<c3p0-config>
+	<!-- This is default config! -->
+	<default-config>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">10</property>
+		<property name="minPoolSize">10</property>
+		<property name="maxStatements">200</property>
+	</default-config>
+
+	<!-- This is my config for mysql-->
+	<named-config name="mysql">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/shop?useUnicode=true&amp;characterEncoding=utf-8</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">15</property>
+		<property name="minPoolSize">5</property>
+		<property name="maxStatements">200</property>
+	</named-config>
+	
+	
+	<!-- This is my config for oracle -->
+	<named-config name="oracle">
+		<property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+		<property name="jdbcUrl">jdbc:oracle:thin:@localhost:1521:orcl</property>
+		<property name="user">scott</property>
+		<property name="password">liang</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">100</property>
+		<property name="minPoolSize">10</property>
+		<property name="maxStatements">200</property>
+	</named-config>
+</c3p0-config>
+

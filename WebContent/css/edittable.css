@@ -1,0 +1,126 @@
+*{ 
+	margin:0;
+	padding:0;
+}
+
+/*上方的黑色长框 */
+.div_title{
+	width:99.5%; 
+	height:24px;
+	background:#353C44;
+	margin:0 auto;
+	margin-top:3px;
+	position:relative;	 	
+}
+
+/* 以下两个为上方黑条上的文字与图片 */
+.div_titlename{
+	length:200px;
+	position:absolute;
+	color:#E1E2E3;
+	font-size:12px;
+	top:4px;
+}
+
+.div_titlename img{
+	vertical-align:middle;
+	margin-left:10px;
+	margin-right:8px;
+	display:inline-block;
+}
+
+
+/* 主表格 */
+.edit_table{	
+	margin:0 auto;
+	width:85%;
+	margin-top:18px;  /* 距离上方黑条的位置 */		
+	border-left:none; 
+  border-right:none;
+	border-top:1px solid #7CB2BC;
+	border-collapse:collapse;
+}
+
+.edit_table td{
+	border-collapse:collapse;
+	font-size:12px;
+	height:38px;
+	padding-left:20px;
+	border-bottom:1px dotted  #DADFE3;
+}
+
+
+/*
+  table td:first-child{background-color:#ff0000; color:#000000;} 可以选第一列
+  table tr td:nth-child(1) {background-color:#ff0000; color:red;}  */
+
+
+/* 文本框前面的说明文字 */
+.td_info{
+	width:120px;
+	background: #F5F7F8;
+	text-align:right;
+	color:#295568;
+	font-weight:bold;
+	padding-right:20px;
+}
+
+/* 控制第二列(装文本框的那一列)的宽度 */
+.td_input{
+	width:410px;
+}
+
+/* 在分类管理等页面,这个列的宽度要窄一些  */
+.td_input_short{
+	width:210px;
+}
+
+/* 文本框后面的提示信息 
+.edit_table label{
+	 color:#8FA0AC;
+ }
+*/
+
+/* 主表格中的text 输入框 */
+.txtbox {
+	width:200px;
+	height:21px;
+	background:url(../images/loginbg_3.gif) repeat-x;
+	border-top: 1px solid #526E8E;
+	border-left: 1px solid #526E8E;
+    border-right:1px solid #BBD4EB;
+	border-bottom: 1px solid #BBD4EB;
+	line-height:21px;
+	padding-left:10px; 		
+	
+}
+
+/* 主表格中的文本域 */
+.txtarea{
+	background:url(../images/loginbg_3.gif) repeat-x;
+	border-top: 1px solid #526E8E;
+	border-left: 1px solid #526E8E;
+    border-right:1px solid #BBD4EB;
+	border-bottom: 1px solid #BBD4EB;
+	padding-left:10px; 		
+	padding-top: 5px;
+	padding-right: 5px;
+	font-size:12px;
+	overflow:auto;
+}
+
+/* 文本框中,焦点进入的时候的背景色,程序中是用javascript设置的,并没有使用伪类 */
+.input_focus{
+	  background:#D1EAF9;
+}
+
+
+/* 提交或重置按钮的样式 */
+.form_btn{
+  border:1px solid #6990B3;
+  width:75px;
+  background:#BAD9E3;
+  margin-right:20px;
+  line-height:18px;
+  color:#295568;
+}

@@ -1,0 +1,21 @@
+/* 用于展示验证信息  */
+.validate_info{
+	font-size:12px;
+	color:#8FA0AC;
+}
+
+.validate_ok{
+	font-size:12px;
+	color:green;
+}
+
+.validate_error{
+	font-size:12px;
+	color:red;	
+}
+
+.result_msg{
+	font-size:12px;
+	font-weight: bold;
+	color:blue
+}

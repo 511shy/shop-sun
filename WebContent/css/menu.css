@@ -1,0 +1,66 @@
+/* 用于设置 left.jsp 页面中导航的样式 */
+*{
+		margin:0px;
+		padding:0px;
+}
+
+html,body{
+		height:100%;
+		font-size:12px;
+		overflow:hidden;
+}
+
+/* 最外层的ul */
+#navigation{
+	margin:0px;
+	padding:0px;
+	width:147px;				
+}
+
+/* 去掉ul 前面的小圆点 */
+#navigation li{
+	list-style:none;
+	text-align:center;
+}
+
+/* 一级菜单样式 */
+#navigation a.head {
+	background: url(../images/main_34.gif); 
+	width:147px;
+	height:23px;
+	text-decoration:none;
+	display:block;
+	font-weight:bold;
+  line-height:23px;
+  cursor:pointer;
+}
+
+/* 二级菜单样式 */
+#navigation li ul li a{
+ 		display: block;
+ 		width:147px;
+	  text-decoration:none;
+  	width:142px;
+    text-align:center;
+    color:black;
+ 	}
+ 	
+ 	#navigation li ul li a label{
+ 		display: block;
+ 
+ 	}
+ 	
+ 	
+ /* 二级菜单鼠标滑过 */ 
+ #navigation li ul li a:hover{
+    color:red;
+    border:1px solid #ade9c2;
+ 	  background:#DCEFFA;
+ }
+ 	  
+ /* 二级菜单的图标 */
+ #navigation li ul li a img{
+ 		display: inline-block;
+  	margin:5px;
+  	border:0px;
+	}

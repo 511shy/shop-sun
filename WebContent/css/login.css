@@ -1,0 +1,46 @@
+/* 用于登录页  */	
+html,body{
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+	
+body{
+	background:#6FB2E6;
+}
+
+#div_center{
+	width:478px;
+	height:287px;
+	background:#6FB2E6 url(../images/bg_login.jpg) no-repeat;
+	position:relative;
+	left:50%;
+	top:50%;
+	margin-left:-238px;
+	margin-top:-143px;				
+}
+
+#div_inputbox{
+	width:170px;
+	height:73px;
+	position:absolute;   /*这里用reletive 也可以 */
+	top: 175px;
+	left:210px;
+}
+
+#adminName ,#password {
+	background:url(../images/bg_login_inputbox.jpg) no-repeat;
+	border:none;
+	width:168px;
+	height:20px;
+}
+#password{
+	margin-top:16px;
+}
+
+#btn_img{      /*按钮就是用的直接绝对定位*/
+	position:absolute; 
+	top: 175px;
+	left:390px;		
+}
